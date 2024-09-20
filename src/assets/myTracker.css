@@ -1,0 +1,139 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+
+
+/* Define reusable classes for JetBrains Mono */
+.jetbrains-mono-regular {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Regular weight */
+    font-style: normal;
+  }
+  
+  .jetbrains-mono-medium {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500; /* Medium weight */
+    font-style: normal;
+  }
+  
+  .jetbrains-mono-bold {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700; /* Bold weight */
+    font-style: normal;
+  }
+
+:root {
+    --drab-dark-brown: #423b0bff;
+    --mountbatten-pink: #987284ff;
+    --cambridge-blue: #9dbf9eff;
+    --coral: #ff8552ff;
+    --beige: #d0d6b5ff;
+  }
+
+body {
+
+    background-color: var(--beige);
+    color: var(--drab-dark-brown);
+    font-family: "JetBrains Mono", monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    display: flex;
+    gap: 20px;
+  }
+
+  .panel {
+    background-color: var(--cambridge-blue);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 18px;
+    color: var(--drab-dark-brown);
+    font-weight: bold;
+  }
+
+  .character {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--beige);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--drab-dark-brown-pink);
+    font-size: 14px;
+  }
+
+  .bonus {
+    background-color: var(--cambridge-blue);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .combatant .bonus {
+    background-color: var(--cambridge-blue);
+  }
+
+  .action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button {
+    background-color: var(--mountbatten-pink);
+    color: var(--beige);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+
+
+  .arrow {
+    transition: transform 0.2s ease, color 0.2s ease;
+    font-size: 24px;
+    cursor: pointer;
+    color:var(--drab-dark-brown);
+  }
+  
+  .arrow:hover {
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    color: var(--mountbatten-pink); /* Change color subtly */
+  }
+
+  .remove {
+    background-color: #e53935;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .step-next {
+    color: #007bff;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+  }
